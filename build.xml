@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="yopiao" default="all">
+
+	<property name="warname" location="yopiao.war" />
+    <property name="build.classes.dir" location="WebRoot/WEB-INF/classes"/>
+    <property name="add.classes.dir" location="WebRoot/WEB-INF/classes"/>
+    <property name="src.dir" location="src" />
+    <property name="properties.dir" location="resource" />
+    <property name="classes.dir" location="WebRoot/WEB-INF/classes" />
+    <property name="WebRoot.WEB-INF.lib.dir" location="WebRoot/WEB-INF/lib"/>
+
+    <target name="delete">
+        <delete dir="${build.classes.dir}" />
+    	<delete file="${warname}" />
+    </target>
+
+    <target name="add">
+        <mkdir dir="${add.classes.dir}" />
+    </target>
+
+    <target name="compile">
+        <javac fork="true" executable="/usr/java/jdk1.7.0_71/bin/javac" srcdir="${src.dir}" destdir="${classes.dir}" includeAntRuntime="false" encoding="UTF-8">
+            <classpath>
+                <fileset dir="${WebRoot.WEB-INF.lib.dir}">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+    <target name="copy">
+        <copy todir="${classes.dir}">
+           <fileset dir="${properties.dir}">
+              <include name="applicationContext-configuration.xml" />
+              <include name="applicationContext-security.xml" />
+              <include name="config.properties" />
+              <include name="ehcache.xml" />
+              <include name="jdbc.properties" />
+              <include name="log4j.properties" />
+              <include name="persistence.xml" />
+          </fileset>
+       </copy>
+    </target>
+     <!--打包-->
+     <target name="war">
+      <war destfile="${warname}" webxml="WebRoot/WEB-INF/web.xml">
+       <fileset dir="WebRoot" />
+      </war>
+     </target>
+    <target name="all" depends="delete,add,compile,copy,war">
+    </target>
+</project>

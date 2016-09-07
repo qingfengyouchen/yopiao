@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ehcache updateCheck="false" name="hibernateCache">
+	<!-- http://ehcache.org/ehcache.xml -->
+	<diskStore path="java.io.tmpdir/ehcache/stlife/hibernate" />
+
+	<!-- DefaultCache setting. -->
+	<defaultCache maxEntriesLocalHeap="10000" eternal="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		overflowToDisk="true" maxEntriesLocalDisk="100000" />
+
+	<!-- Special objects setting. -->
+	<cache name="com.zx.stlife.entity.sys.User" maxEntriesLocalHeap="1000" eternal="true"
+		overflowToDisk="true" maxEntriesLocalDisk="10000" />
+	<cache name="com.zx.stlife.entity.sys.User.roleList" maxEntriesLocalHeap="1000" eternal="true"
+		overflowToDisk="true" maxEntriesLocalDisk="10000" />
+	<cache name="com.zx.stlife.entity.sys.Role" maxEntriesLocalHeap="100"
+		eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="com.zx.stlife.entity.sys.Role.permissionList" maxEntriesLocalHeap="100"
+		   eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="com.zx.stlife.entity.sys.Permission" maxEntriesLocalHeap="100"
+		   eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="com.zx.stlife.entity.sys.Permission.roleList" maxEntriesLocalHeap="100"
+		   eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="com.zx.stlife.entity.sys.Module" maxEntriesLocalHeap="100"
+		   eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="com.zx.stlife.entity.sys.Module.permissionList" maxEntriesLocalHeap="100"
+		   eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+	<cache name="com.zx.stlife.entity.sys.Config" maxEntriesLocalHeap="100"
+		   eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+
+	<cache name="com.zx.stlife.entity.member.MemberLevel" maxEntriesLocalHeap="100"
+		   eternal="true" overflowToDisk="true" maxEntriesLocalDisk="1000" />
+</ehcache>

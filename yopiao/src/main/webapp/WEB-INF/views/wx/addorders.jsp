@@ -1,0 +1,124 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@include file="/common/taglibs.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!--INC.META-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<title>提交订单</title>
+<link rel="stylesheet" type="text/css" href="${rootUri}/static/wx/css/base.css">
+<link rel="stylesheet" type="text/css" href="${rootUri}/static/wx/css/style.css">
+<script src="${rootUri}/static/wx/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="${rootUri}/static/wx/js/TouchSlide.1.1.js"></script>
+</head>
+<body>
+<!--加载中...-->
+<div class="page-loader">
+  <div class="loader">
+    Loading...
+  </div>
+</div>
+<script>
+$(function(){
+	$(".page-loader").remove();
+});
+</script>
+<!--头部通用 开始-->
+<div class="headcom w_100">
+	<div class="head">
+    	<h3>提交订单</h3>
+        <div class="back"><a href="javascript:history.go(-1)">返回</a></div>
+        <div class="more"><a href="#"></a></div>
+    </div>
+</div>
+<div class="hg50"></div>
+<!--头部通用 结束-->
+<!--提交订单主体部分 开始-->
+<div class="order w_100">
+	<div class="order-infor">
+    	<img src="${rootUri}/static/wx/images/nry_tc_img01.jpg" />
+        <h3>容主儿世界巡回演唱会容主儿世界巡回演唱会</h3>
+        <p>2016-07-23 19:00</p>
+        <p>乐事体育生态中心</p>
+    </div>
+    <div class="np mb10"><span><strong class="orange">1500</strong>元</span>1张</div>
+    <div class="selplace-empty mb10">
+    	<a href="${rootUri}/wx/url?url=receiveaddr"><span class="icon">&gt;</span>您还没有选择收票地址</a>
+    </div>
+    <div class="selplace-has mb10">
+    	<span class="icon">&gt;</span>
+    	<h3>张明  1291302312</h3>
+        <p>北京市朝阳区某某截取</p>
+    </div>
+    <div class="order-paytype w_100 mb10">
+    	<div class="order-paytype-title">支付方式</div>
+        <ul class="paytype-list clearfix">
+        	<li class="active">
+            <div class="icon"></div>
+            <img src="${rootUri}/static/wx/images/order_paytype_zfb.jpg" /> 
+            <h3>支付宝</h3>
+            <p>推荐支付宝用户使用</p></li>
+            <li>
+            <div class="icon"></div>
+            <img src="${rootUri}/static/wx/images/order_paytype_wx.jpg" /> 
+            <h3>微信</h3>
+            <p>推荐已安装微信的用户使用</p></li>
+            <li>
+            <div class="icon"></div>
+            <img src="${rootUri}/static/wx/images/order_paytype_ye.jpg" /> 
+            <h3>余额支付</h3>
+            <p>哟票钱包支付</p></li>
+        </ul>
+        <script>
+        	$(".paytype-list li").click(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+			});
+        </script>
+    </div>
+    <div class="order-mess">
+    	<textarea class="comtare" placeholder="给商家留言（选填）"></textarea>
+    </div>
+    <div class="order-read">
+    	<div class="input"><input class="order-check" type="checkbox" /></div>
+        我已阅读<a href="#" class="orange">订票服务条款</a>
+    </div>
+    <script>
+    	$(".order-read .input").click(function(){
+			$(this).toggleClass("active");
+		});
+    </script>
+    <div class="order-foot w_100">
+    	<div class="order-foot-top">
+        	<p>商品金额：<span>1500.00元</span></p>
+            <p>运费：<span>+22.00元</span></p>
+        </div>
+        <div class="order-foot-btn">
+        	<input type="button" class="combtn2 btnbg2" value="提交订单" />
+        	应付：<span class="orange">1522.00元</span>
+        </div>
+    </div>
+</div>
+<!--提交订单主体部分 结束-->
+
+<script>
+//640px 对应6.4rem
+//核心代码，每个页面都要有
+	(function (doc, win) {
+	  var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+		  var clientWidth = docEl.clientWidth;
+		  if (!clientWidth) return;
+		  docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+		};
+
+	  if (!doc.addEventListener) return;
+	  win.addEventListener(resizeEvt, recalc, false);
+	  doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+</script> 
+<script type="text/javascript" src="${rootUri}/static/wx/js/dp.js"></script>
+</body>
+</html>

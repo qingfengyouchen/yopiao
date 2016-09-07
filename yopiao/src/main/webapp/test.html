@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试客户端接口</title>
+    <meta http-equiv="content-Type" content="text/html" charset="utf-8">
+    <link rel="shortcut icon" href="static/images/new_feed/favicon.ico" />
+    <script src="static/js/jquery/jquery-1.8.3.min.js"></script>
+    <style>
+        div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<form id="dataForm" target="_blank">
+    <div>url: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="url" name="url" style="width: 400px;" value="http://localhost:8080/stlife/app/"/>
+    </div>
+    <div>参&nbsp;&nbsp;&nbsp;&nbsp;数:
+        <textarea id="params" style="width: 400px; height: 100px;">例如: p1=a,多个参数使用回车键分割</textarea>
+    </div>
+    <div>提交类型:
+        <label><input type="radio" name="sumbitType" value="get">get</label>
+        <label><input type="radio" name="sumbitType" value="post" checked>post</label>
+    </div>
+    <div><input type="button" value="测试" onclick="submitForm()" style="width: 100px;"></div>
+</form>
+
+<script>
+    function submitForm(){
+        var $form = $('#dataForm');
+        var url = $('#url').val();
+        var params = $('#params').val();
+        if(params){
+            var arr = params.split('\n');
+            var paramStr;
+            if(arr.length > 0){
+                for(var i = 0; i < arr.length; i++){
+                    if(i == 0){
+                        paramStr = arr[i];
+                    }else{
+                        paramStr += '&' + arr[i];
+                    }
+                }
+                url += "?" + paramStr;
+            }
+        }
+        $form.attr("action", url)
+                .attr("method", $('[name=sumbitType]:checked').val());
+        $form.submit();
+    }
+</script>
+</body>
+</html>

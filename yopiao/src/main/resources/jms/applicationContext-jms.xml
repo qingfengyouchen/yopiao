@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<description>JMS高级应用配置(NON_PERSISTENT,DURIABLE,SELECTOR)</description>
+
+	<!-- ActiveMQ 连接工厂 -->
+	<bean id="advancedConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<property name="brokerURL" value="${jms.broker_url}" />
+		<property name="userName" value="${jms.username}"/>
+		<property name="password" value="${jms.password}"/>
+		<!-- 对PERSISTENT的消息进行异步发送(NON_PERSISTENT消息默认异步发送) -->
+		<!-- <property name="useAsyncSend" value="true" /> -->
+	</bean>
+
+	<!-- Spring Caching 连接工厂 -->
+	<bean id="advancedCachingConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+		<property name="targetConnectionFactory" ref="advancedConnectionFactory" />
+		<property name="sessionCacheSize" value="20" />
+	</bean>
+
+	<!-- Queue定义 -->
+	<bean id="advancedNotifyQueue" class="org.apache.activemq.command.ActiveMQQueue">
+		<constructor-arg value="q.notify.commission" />
+	</bean>
+
+	<!-- 异步接收Queue消息Container -->
+	<bean id="advancedQueueContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+		<property name="connectionFactory" ref="advancedConnectionFactory" />
+		<property name="destination" ref="advancedNotifyQueue" />
+		<property name="messageListener" ref="advancedNotifyMessageListener" />
+		<!-- 初始5个Consumer, 可动态扩展到10 -->
+		<property name="concurrentConsumers" value="5" />
+		<property name="maxConcurrentConsumers" value="10" />
+		<!-- 设置消息确认模式为Client -->
+		<property name="sessionAcknowledgeModeName" value="CLIENT_ACKNOWLEDGE" />
+	</bean>
+
+	<!-- 异步接收消息处理类 -->
+	<bean id="advancedNotifyMessageListener" class="com.zx.stlife.base.jms.NotifyMessage4CommissionListener" />
+</beans>

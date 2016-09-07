@@ -1,0 +1,791 @@
+﻿.m-calc-resultList {
+width:100%;
+border-top:1px solid #d5d5d5;
+border-bottom:1px solid #d5d5d5;
+}
+
+.m-calc-resultList th,.m-calc-resultList td {
+padding-left:10px;
+line-height:22px;
+border-bottom:1px solid #d5d5d5;
+}
+
+.m-calc-resultList th {
+background:#f8f8f8;
+text-align:left;
+}
+
+.m-calc-resultList th.time {
+width:218px;
+}
+
+.m-calc-resultList td.user a {
+color:#8f8f8f;
+}
+
+.m-calc-result {
+margin-top:10px;
+background:#fff;
+color:#525252;
+border-top:1px solid #e2e2e2;
+border-bottom:1px solid #e2e2e2;
+padding:10px 10px 15px;
+}
+
+.m-calc-result-title {
+font-size:13px;
+}
+
+.m-calc-result-code {
+text-align:center;
+font-size:14px;
+}
+
+.ico-label-l-yxlb {
+background-image:url(../images/label_yxlb.png);
+background-repeat:no-repeat;
+background-size:contain;
+}
+
+
+.banner{
+    width:100%;
+    height:auto;
+}
+.center{
+    width:100%;
+}
+.cen_tel{
+    width:100%;
+    height:3.12rem;
+    background: url('../images/78.png') repeat center center;
+    margin-bottom:0.5rem;
+    position:relative;
+}
+.cen_tel div{
+    color:#1BA2FF;
+    margin:0 auto;
+    line-height:3.12rem;
+    width:30%;
+    height:3.12rem;
+    background: #fff;
+    text-align: center;
+    padding:0 1rem;
+    font-weight:bold;
+}
+.cen_tel span{
+    position:absolute;
+    bottom:-1rem;
+    right:10px;
+    display:block;
+    width:100%;
+    height:2.08rem;
+    background: url('../images/yun.png') no-repeat center right;
+    background-size:44px 26px;
+}
+.cen_top{
+    width:100%;
+    poaition:relative;
+}
+.cen_top .ins1{
+    position:relative;
+    top:7rem;
+    left:-0.3rem;
+    width:1.8rem;
+    height:2.08rem;
+    display:block;
+    background: url('../images/yun.png') no-repeat center right;
+    background-size:44px 26px;
+}
+.cen_top .ins2{
+    position:absolute;
+    bottom:-2rem;
+    right:-0rem;
+    width:2.2rem;
+    height:2.08rem;
+    display:block;
+    background: url('../images/yun.png') no-repeat center left;
+    background-size:44px 26px;
+}
+.cen_top p{
+    color:#1BA2FF;
+    text-align: center;
+}
+.cen_top span{
+    display:block;
+    padding:0 1.5rem;
+    text-indent:2rem;
+    margin-top:1.8rem;
+    line-height:22px;
+    color:#686868;
+}
+.cen_cen{
+    width:100%;
+    margin-top:2.8rem;
+    padding-bottom:2.96rem;
+    position:relative;
+}
+.cen_cen p{
+    color:#1BA2FF;
+    line-height:2rem;
+    height:2rem;
+    display:inline-block;
+    margin-left:0.8rem;
+    padding-left:1rem;
+    background:url('../images/left.png') no-repeat center left;
+}
+hr{
+    margin-bottom:1.4rem;
+    background-color:#E6E6E6;
+    height:1px;
+    border:none;
+}
+.cen_cen span{
+    display:block;
+    padding:0 1.5rem;
+    color:#686868;
+    line-height:22px;
+    margin-top:0.8rem;
+}
+.cen_cen span i{
+    width:1.28rem;
+    height:1.28rem;
+    display:inline-block;
+    background: #95D3FF;
+    border-radius:50%;
+    color:#fff;
+    text-align: center;
+    line-height:1.28rem;
+}
+.cen_cen .ins3{
+    position:absolute;
+    bottom:0rem;
+    left:0rem;
+    width:1.8rem;
+    height:2.08rem;
+    display:block;
+    background: url('../images/yun.png') no-repeat center right;
+    background-size:44px 26px;
+}
+.cen_cen .ins4{
+    position:absolute;
+    bottom:1rem;
+    left:50%;
+    width:3.5rem;
+    height:2.08rem;
+    display:block;
+    background: url('../images/yun.png') no-repeat center right;
+    background-size:44px 26px;
+}
+.cen_cen .ins5{
+    position:absolute;
+    bottom:3rem;
+    left:80%;
+    width:3.5rem;
+    height:2.08rem;
+    display:block;
+    background: url('../images/yun.png') no-repeat center right;
+    background-size:44px 26px;
+}
+.cen_cen h5{
+    text-align: center;
+    color:#1BA2FF;
+    font-weight:normal;
+    padding:1.8rem 0  1.2rem 0
+}
+.footer{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+/*商务合作结束*/
+.pic{
+    width:100%;
+    height:auto;
+}
+.pic div{
+    width:100%;
+    height;auto;
+}
+.pic .logo{
+    position:relative;
+}
+.pic .app{
+    width:5.8rem;
+    height:5.8rem;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-2.7rem;
+}
+.pic .app img{
+    width:100%;
+    height:100%
+}
+.pic_btn{
+    width:100%;
+    height:6.72rem;
+    background: #e7f6ff;
+    margin-top:-10px;
+    padding-top:1.92rem;
+    padding-bottom:3rem;
+}
+.pic_btn a{
+    width:80%;
+    height:4.8rem;
+    display:block;
+    margin:0 auto;
+    margin-bottom:1.92rem;
+}
+.pic_btn a img{
+    width:100%;
+    height:100%;
+}
+.inner{
+    width:100%;
+    height:auto;
+    margin-top:-4rem;
+}
+.inner_pic{
+    width:100%;
+    background: #E74542;
+    margin-top:-5px;
+}
+.inner_pic p{
+    width:100%;
+    height:3rem;
+    background: url('../images/pic/line.png') no-repeat center left;
+    line-height:3rem;
+    padding:0 0 0 1.8rem;
+    color:#fff;
+    font-size: 0.96rem;
+    margin-left:1rem;
+}
+.inner_pic em{
+    width:80%;
+    display:block;
+    margin:0 auto;
+    margin-top:0.5rem;
+}
+.inner-txt{
+    width:100%;
+    height:1.6rem;
+    background: url('../images/pic/p.png') center ;
+    text-align: center;
+    margin-top:2rem;
+}
+.inner-txt b{
+    font-weight: normal;
+    color:#fff;
+    line-height:1.6rem;
+    background: #E74542;
+    padding:0 0.5rem;
+    font-size: 1.5rem;
+}
+.inner_pic span{
+    font-size: 1rem;
+    color:#fff;
+    text-indent:2rem;
+    display:block;
+    margin-top:1rem;
+}
+.inner_pic h6{
+    margin-top:3rem;
+    padding-bottom:1.5rem;
+    font-size:14px ;
+    color:#fff;
+    opacity:0.5;
+    text-align: center;
+}
+.about{
+    width:100%;
+    height:auto;
+    margin-top:2rem;
+}
+.about p{
+    line-height:24px;
+    margin-top:1rem;
+}
+.ban{
+    width:100%;
+    height:14.96rem;
+    background: url('../images/pic/beijing.png') no-repeat center;
+    background-size:375px 187px;
+    position:fixed;
+    bottom:-2rem;
+    text-align: center;
+    color:#333;
+}
+.ban p{
+     position:absolute;
+     bottom:5rem;
+    width:100%;
+ }
+.ban span{
+    position:absolute;
+    bottom:3rem;
+    display:block;
+    width:100%;
+}
+.cen_t span{
+    margin-top:0.5rem;
+    text-indent:0;
+    text-align: center;
+}
+/*什么是乐夺宝*/
+.m-help-main{
+    width:100%;
+    height:auto;
+    margin-bottom:1.5rem;
+}
+.m-help-main h3{
+    width:5rem;
+    height:1.5rem;
+    background: #DB3652;
+    margin:2rem 0 0 0.8rem;
+    text-align: center;
+    line-height:1.5rem;
+    font-weight: normal;
+    color:#fff;
+    font-size: 1 remm;
+    letter-spacing:0.5px;
+}
+
+.m-help-main-txt{
+    margin-top:1rem;
+    font-size: 15px;
+}
+.m-help-main-txt p{
+    margin-top:0.8rem;
+    line-height:21px;
+    letter-spacing:0.5px;
+    text-indent:2rem;
+}
+.m-help-ext{
+    width:100%;
+    margin-bottom:1.5rem;
+}
+.m-help-ext h4{
+    color:#DB3652;
+    border-left:3px solid #DB3652;
+    padding-left:0.5rem;
+    font-size: 16px;
+    line-height:20px;
+    margin-bottom:10px;
+    margin-top:1.5rem;
+}
+.m-help-ext b{
+    font-weight: normal;
+}
+.m-help-ext hr{
+    width:100%;
+    height:1px;
+    background: #e1e1e1;
+    border:none;
+}
+.m-help-ext ul{
+    padding-left:0.5rem;
+}
+.m-help-ext .index{
+    display:inline-block;
+    width:1.2rem;
+    height:1.2rem;
+    text-align: center;
+    line-height:1.2rem;
+    border-radius:50%;
+    background: #ED9AA8;
+    color:#fff;
+}
+.m-help-ext li{
+    margin-top:10px;
+    line-height:20px;
+    font-size: 14px;
+}
+/*隐私政策结束*/
+.conceal-tel{
+    width:100%;
+    margin-top:1.5rem;
+    line-height:1.5rem;
+}
+.conceal-tel h2{
+    width:100%;
+    font-size: 24px;
+    font-weight: normal;
+    color:#004796;
+    margin-bottom:0.8rem;
+}
+.conceal-tel p{
+    margin-top:0.6rem;
+    font-size: 14px;
+}
+.conceal-ul{
+    width:100%;
+    margin-top:1rem;
+    font-size: 14px;
+}
+.conceal-ul li{
+    list-style-position: inside;
+    list-style-type:disc;
+    margin-top:0.3rem;
+}
+.conceal-ul li p{
+    padding-left:0.8rem;
+}
+.conceal-tel h6,.conceal-tel h1{
+    margin-top:0.8rem;
+    font-size: 14px;
+}
+.conceal-tel h1{
+    font-size: 15px;
+}
+.conceal-tel span{
+    text-indent:2rem;
+    display:block;
+    font-size: 14px;
+}
+.conceal-tel b{
+    margin:0.5rem 0;
+    display:block;
+    font-size: 15px;
+}
+/*隐私政策结束*/
+
+.live{
+    width:100%;
+    height:45rem;
+    background:url('../images/live.png') no-repeat center center;
+    background-size:100% 100% ;
+    padding-top:10rem;
+    box-sizing:border-box;
+}
+.liv-pic{
+    width:19.2rem;
+    height:24rem;
+    margin:0 auto;
+    background:url('../images/live2.png') no-repeat center center;
+    background-size:cover;
+    position:relative;
+    border-radius:6px;
+}
+.live p{
+    text-align: center;
+    color:#fffa94;
+}
+.draw{
+    position:absolute;
+    width:10.72rem;
+    height:2.8rem;
+    background: #FFFA94;
+    bottom:3.5rem;
+    left:50%;
+    margin-left:-5.36rem;
+    border-radius:6px;
+    font-size: 22px;
+    font-family: '微软雅黑';
+    color:#F85A4F;
+}
+.draw2{
+    background: #d3483e;
+    color:#eab3b0;
+}
+/*推荐码奖励*/
+.hear{
+    width:100%;
+    height:3.6rem;
+    padding: 0 0.8rem;
+    box-sizing:border-box;
+}
+.hear a{
+    width:100%;
+    height:100%;
+    display: block;
+    line-height: 3.6rem;
+    background: url('../images/bolck-s.png') no-repeat center left;
+    background-size:20px 20px;
+    padding-left: 1.5rem;
+    box-sizing:border-box;
+    font-family: '微软雅黑';
+}
+.wen{
+    text-align: center;
+    margin-top:20px;
+}
+.ber{
+    width:100%;
+    height:auto;
+    margin-bottom:-15px;
+}
+.me{
+    width:100%;
+    height:auto;
+    margin-top:20px;
+}
+.me_l{
+    width:40%;
+    float:left;
+}
+.me_r{
+    width:58%;
+    float:right;
+}
+.me_r p,.me_r span{
+    font-size: 18px;
+    color:#333;
+}
+.me_r span{
+    font-size:16px;
+    margin-left:1rem;
+    display:block;
+}
+.me_r button{
+    width:7.04rem;
+    height:1.92rem;
+    background: url('../images/copy.png') no-repeat center center;
+    background-size:100% 100%;
+    display:block;
+    margin-top:1.5rem;
+}
+.yun{
+    width:100%;
+    padding:0;
+    margin-top:-10px;
+}
+.hong{
+    width:100%;
+    height:auto;
+    background:#e03500;
+    padding-bottom:5rem;
+}
+.hong_txt{
+    width:100%;
+    height:auto;
+    text-align: center;
+    padding-top:20px;
+}
+.hong_txt p{
+    color:#fff;
+    opacity:0.8;
+    font-size: 15px;
+    margin-bottom:10px;
+}
+.hong_cen{
+    width:90%;
+    height:auto;
+    background: #fff;
+    margin:0 auto;
+    border-radius:6px;
+    margin-top:1.5rem;
+}
+.hong_cen p{
+    font-size: 16px;
+    color:#402014;
+    line-height:3rem;
+}
+.hong_pic{
+    margin-top:1rem;
+}
+.hong_pic ul{
+    width:95%;
+    height:auto;
+    margin:0 auto;
+}
+.hong_pic li{
+    width:33.333%;
+    height:8.04rem;
+    background: url('../images/hongbao.png') no-repeat center center;
+    background-size:80px 100px;
+    float:left;
+    line-height:11.04rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom:10px;
+    color:#fff;
+}
+.hong_pic li button{
+    width:4rem;
+    height:4rem;
+    display:block;
+    background: url('../images/ling.png') no-repeat center center;
+    background-size:100%;
+    margin:2.02rem auto;
+}
+.bg{
+    position: fixed;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.4);
+    display:none;
+}
+.bg_pic{
+    position:fixed;
+    top:50%;
+    left:50%;
+    z-index:99;
+    width:26.4rem;
+    height:26.4rem;
+    background: url('../images/hong.png') no-repeat center center;
+    background-size:330px;
+    margin-left:-13.2rem;
+    margin-top:-13.2rem;
+    text-align: center;
+    display:none;
+}
+.bg_pic span{
+    font-size: 30px;
+    color:#fff;
+    line-height:30.4rem;
+    margin-left:30px;
+    font-weight: bold;
+}
+.bg_pic ins{
+    position:absolute;
+    top:0;
+    right:4rem;
+    width:1.36rem;
+    height:1.36rem;
+}
+/* 支付结果------------------------------------- */
+.res{
+    width:100%;
+    height:12.16rem;
+}
+.resT{
+    width:100%;
+    height:6.32rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+.resB{
+    width:100%;
+    height:5.84rem;
+    padding: 1.66rem 0;
+    box-sizing:border-box;
+}
+.res_bon{
+    width:90%;
+    height:2.52rem;
+    margin:0 auto;
+}
+.res_bon ul{
+    width:100%;
+    height:100%;
+}
+.res_bon li{
+    width:44%;
+    height:100%;
+    margin:0 3%;
+    float: left;
+    border-radius: 6px;
+    box-sizing:border-box;
+    text-align: center;
+    line-height: 2.52rem;
+}
+.res_bon a{
+    width:100%;
+    height:100%;
+    display: block;
+    font-size: 22px;
+}
+.pay{
+    width:94%;
+    border:1px solid #D8D8D8;
+    margin:10px auto;
+    padding:1.2rem 5px;
+    box-sizing:border-box;
+}
+.pau h6{
+    width:100%;
+    height:30px;
+    background: pink;
+    font-size: 15px;
+}
+.pay h6 p{
+    display: block;
+    float: left;
+    width:70%;
+    font-weight: normal;
+}
+.pay h6 em{
+    display: block;
+    float: right;
+    width:25%;
+    height:100%;
+    display: block;
+    text-align: right;
+    font-weight: normal;
+}
+.pay h6 em b{
+    font-weight: normal;
+}
+.pay dt,.pay dd{
+    float: left;
+    width:25%;
+    margin-top:0.3rem;
+}
+.nub{
+    font-size: 0.9rem;
+}
+.h_l{
+    font-size: 18px;
+    font-weight: normal;
+}
+.bg_1{
+    background:#F15353;
+    border:1px solid #EF3B3B;
+}
+.bg_3{
+    background: #E2E2E2;
+}
+
+/*招商*/
+.orders{
+    width:100%;
+    height:auto;
+    position:relative;
+}
+.order-txt{
+    position:absolute;
+    top:50%;
+    left:3%;
+    width:86%;
+    height:auto;
+    background: #fff;
+    border-radius:6px;
+    padding:0.8rem;
+}
+.order-txt h5{
+    width:95%;
+    height:1.5rem;
+    margin:0 auto;
+    text-align: center;
+    font-weight: normal;
+    color:#333;
+    background:url('../images/kuai.png') repeat-x center center;
+}
+.order-txt h5 em{
+    background: #fff;
+    padding:3px;
+    font-size: 1.1rem;
+}
+.order-txt span{
+    width:100%;
+    display:block;
+    text-align: center;
+    margin-top:1.5rem;
+    color;#999;
+    font-size: 0.9rem;
+}
+.order-txt .or_p{
+    text-align: center;
+    margin-top:1rem;
+    font-size: 0.9rem;
+}
+.order-txt dl{
+    margin-top:1rem;
+}
+.order-txt dd{
+    margin-top:6px;
+    font-size: 0.9rem;
+}

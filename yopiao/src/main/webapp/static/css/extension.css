@@ -1,0 +1,45 @@
+.table thead th{
+    line-height: 30px;
+}
+.table th, .table td {
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.table th{
+    text-align: center;
+}
+
+div.condition-bar {
+    margin: 0 0 20px;
+    padding-top: 10px;
+}
+
+form {
+    margin: 0;
+}
+
+.fixed{
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.float-l{
+    float: left;
+}
+
+.float-r{
+    float: right;
+}

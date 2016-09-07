@@ -1,0 +1,13 @@
+com\base\jpa\model\SuperIntEntity.class
+com\base\jpa\MyJpaRepositoryFactory.class
+com\base\jpa\query\Page.class
+com\base\jpa\util\JsonUtils2.class
+com\base\jpa\MyJpaRepositoryFactoryBean.class
+com\base\jpa\model\SuperStringEntity.class
+com\base\jpa\MyConcreteJpaRepository.class
+com\base\jpa\MyJpaRepository.class
+com\base\jpa\query\Query$MatchType.class
+com\base\jpa\query\Query$1.class
+com\base\jpa\query\Query$AndOr.class
+com\base\jpa\query\Query.class
+com\base\jpa\model\SuperLongEntity.class

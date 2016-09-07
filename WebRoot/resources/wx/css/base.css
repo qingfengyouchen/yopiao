@@ -1,0 +1,62 @@
+/*base*/
+html,body{ min-height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0 auto; padding:0; }
+body { background:#f2f2f2; color:#333; font-size:13px; font-family: Microsoft YaHei, Verdana, Arial, Helvetica, sans-serif; }
+
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; }
+a { color:#333; text-decoration:none; cursor:pointer; }
+a:hover { text-decoration:none; }
+img { border:none; }
+input{ border:none;}
+ol,ul,li { list-style:none; }
+table { border-collapse:collapse; }
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+/* End hide from IE-mac */ 
+/*html5*/
+article, aside, dialog, footer, header, section, footer, nav, figure, menu { display: block; }
+/*common*/
+.w980{ width:980px;}
+.w1000{ width:1000px;}
+.w1200{ width:1000px;}
+.w_100{ width:100%;}
+.fl{ float:left;}
+.fr{ float:right;}
+.mt10{ margin-top:10px;}
+.mb5{ margin-bottom:5px;}
+.mb10{ margin-bottom:10px;}
+.mr0{ margin-right: 0px;}
+.mt20{ margin-top:20px;}
+.mt30{ margin-top:30px;}
+.mt40{ margin-top:40px;}
+.mt80{ margin-top: 80px;}
+.mb20{ margin-bottom:20px;}
+.mb40{ margin-bottom:40px;}
+.mb120{ margin-bottom: 120px;}
+
+/**load**/
+.page-loader { position: fixed; background: #fff; bottom: 0; right: 0; left: 0; top: 0; z-index: 9998; }
+.loader { position: absolute; border-left: 2px solid #b2b2b2; border-top: 2px solid rgba(245, 245, 245, 0.8); border-right: 2px solid rgba(245, 245, 245, 0.8); border-bottom: 2px solid rgba(245, 245, 245, 0.8); height: 46px; width: 46px; left: 50%; top: 50%; margin: -23px 0 0 -23px; text-indent: -9999em; font-size: 10px; z-index: 9999; -webkit-animation: load 0.8s infinite linear; -moz-animation: load 0.8s infinite linear; ms-animation: load 0.8s infinite linear; o-animation: load 0.8s infinite linear; animation: load 0.8s infinite linear; }
+.loader, .loader:after { border-radius: 50%; width: 46px; height: 46px; }
+ @-webkit-keyframes load {
+ 0% {
+ -webkit-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+ 100% {
+ -webkit-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+}
+ @keyframes load {
+ 0% {
+ -webkit-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+ 100% {
+ -webkit-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+}
+

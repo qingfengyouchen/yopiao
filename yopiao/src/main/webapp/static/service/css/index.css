@@ -1,0 +1,490 @@
+﻿/* 求职信息 开始-------------------------------------------------------------------------------------*/
+.main{
+width:100%;
+height:auto;
+overflow: hidden;
+}
+.main-ul,.main_f,.main_in{
+width:100%;
+box-sizing:border-box;
+display: block;
+}
+.main-ul a,.main_f a,.main_can a,.main_in a{
+font-family: '微软雅黑';
+display: block;
+width:100%;
+height:6.24rem;/* 156px */
+}
+.main-ul li{
+width:100%;
+height:100%;/* 156px */
+}
+.conten dt,.conten dd{
+padding:0.3rem 0.8rem 0 0.8rem;/* 20px */
+white-space:nowrap;
+word-break:keep-all;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+.conten dt{
+height:1.2rem;/* 30px */
+line-height: 1.2rem;/* 24px */
+padding:0.8rem 0.8rem 0.5rem 0.8rem;
+}
+/* 求职信息 结束-------------------------------------------------------------------------------------*/
+
+/* 信息详情 开始-------------------------------------------------------------------------------------*/
+.info dt,.info dd{
+margin-top:0.4rem;
+letter-spacing: 0.02rem;
+}
+
+.info dd b{
+font-weight: normal;
+height:1rem;
+text-align: right;
+width:100%;
+display: block;
+}
+.info dd em{
+margin-left:15px;
+}
+.info2{
+margin-top:2rem;
+}
+.info2 h5{
+width:100%;
+font-weight: normal;
+padding:0 0.8rem 0 0.8rem;/* 20px */
+letter-spacing: 0.08rem;
+height:1.12rem;
+margin-top: 0.3rem;
+box-sizing:border-box;
+}
+.ins{
+width:0.24rem;
+height:1.12rem;
+background: #F88031;
+display: inline-block;
+margin:0 0.8rem 0 0;
+padding:0 ;/* 20px */
+}
+.info2 p{
+line-height: 1.6rem;
+margin-top:0.6rem;
+padding:0.3rem 0.8rem 0 0.8rem;/* 20px */
+}
+.info,.info2,.info3{
+background: #fff;
+padding:0.8rem 0;
+}
+/* 电话 */
+.tel{
+width:100%;
+height:4.4rem;
+background: #F88031;
+text-align: center;
+line-height: 4.4rem;
+font-weight: normal;
+letter-spacing: 0.08rem;
+position: relative;
+position: fixed;
+bottom:0;
+left:0;
+}
+.tel a{
+width:100%;
+height:100%;
+display: block;
+}
+.tel del{
+width:2.48rem;
+height:2.72rem;
+position: absolute;
+background:url('../images/tel.png') no-repeat;
+left:50%;
+top:50%;
+margin:-0.8rem 0 0 -5.72rem;
+background-size:31px 34px;
+}
+/* 求职信息详情 结束-------------------------------------------------------------------------------------*/
+
+/* 顺风代驾、便民服务、美食 开始-------------------------------------- ----------------------------------*/
+.main_f a{
+height:6.2rem;/* 155px */
+width:80%;
+float:left;
+}
+.main_f li{
+width:100%;
+height:auto;
+padding:1.2rem 0 0 0;
+box-sizing:border-box;
+}
+
+.con{
+width:100%;
+height:100%;
+float:left;
+padding-left: 0.8rem;
+box-sizing:border-box;
+}
+
+.con .cp{
+width:100%;
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;/* 行数 */
+-webkit-box-orient: vertical;
+margin-bottom:0.8rem;
+
+}
+.con_tel{
+width:15%;
+height:100%;
+background: url('../images/tel_2.png') no-repeat center center;
+background-size: 2.48rem 2.72rem;
+float: right;
+margin-right:0.8rem;
+}
+/* 顺风代驾、便民服务、美食 结束--------------------------------------------------------------------------*/
+
+/* 天台活动 开始-----------------------------------------------------------------------------------------*/
+.main_can a{
+height:9.6rem;/* 240px */
+}
+.main_can li{
+width:100%;
+height:100%;
+padding:1.2rem 0;
+box-sizing:border-box;
+}
+.can_pic{
+width:22%;/* 124px */
+height:7.6rem;/* 190px */
+margin-left:0.8rem;/* 20px */
+float: left;
+}
+.can_pic img{
+width:6rem;
+height:7.6rem;
+}
+.can{
+width:74%;
+float: right;
+box-sizing:border-box;
+}
+.can .te{
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;/* 行数 */
+-webkit-box-orient: vertical;
+margin-bottom:0.2rem;
+padding-right: 0.8rem;
+}
+.pic_d{
+width:100%;
+height:auto;/* 500px */
+}
+.pic{
+width:100%;
+height:100%;
+margin:0 auto;
+}
+/*.pic img{
+width:100%;
+height:100%;
+display: block;
+}*/
+.info .enlist{
+width:95%;
+display: block;
+line-height:2.88rem;/* 72px */
+border:1px solid #FFBF5F;
+border-radius: 6px;
+text-align: center;
+}
+.touch{
+width:100%;
+height:9.2rem;/* 230px */
+margin-top:0.8rem;/* 20px */
+}
+.touch .t{
+width:26%;
+padding-left: 0.8rem;
+box-sizing:border-box;
+}
+.touch .d{
+width:75%;
+box-sizing:border-box;
+}
+.touch tr{
+margin-top: 1rem;
+}
+.touch input{
+border:none;
+border-bottom: 1px solid #CBCBCB;
+width:81%;
+line-height: 1.2rem;/* 30px */
+outline:none;
+background: none;
+}
+.affirm{
+width:100%;
+height:3rem;/* 72px */
+}
+.affirm .enlist{
+width:96%;
+display: block;
+line-height:2.88rem;/* 72px */
+border:1px solid #FFBF5F;
+border-radius: 6px;
+text-align: center;
+}
+.touch .bt{
+padding-left:0.8rem;/* 20px */
+}
+/* 天台活动 结束-----------------------------------------------------------------------------------------*/
+.line .te{
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;/* 行数 */
+-webkit-box-orient: vertical;
+margin-bottom:0.2rem;
+padding-right: 0.8rem;
+}
+.wraper{
+width:100%;
+height:auto;
+}
+.wraper li{
+width:100%;
+height:4rem;
+margin-top:1rem;
+}
+.wraper li input{
+width:80%;
+height:50%;
+display: block;
+margin:0 auto;
+font-size: 1.2rem;
+color:#333;
+outline:none;
+background: none;
+border-bottom:1px solid #CBCBCB;
+}
+.wraper li p{
+width:80%;
+margin:0 auto;
+font-size: 0.8rem;
+}
+.wraper li.btn input{
+width:90%;
+height:3rem;
+margin:0 auto;
+border:1px solid #F88031;
+font-size: 1rem;
+color:#F88031;
+border-radius: 6px;
+}
+/* 常见问题 ----------------------------------*/
+.conten,.content ul,.content li{
+width:100%;
+height:auto;
+display: block;
+overflow: hidden;
+}
+.content li{
+border-bottom:1px solid #DBDBDB;
+}
+.content li h6{
+width:100%;
+height:3.44rem;
+background: #fff;
+line-height: 3.44rem;
+font-weight: normal;
+}
+.txt{
+width:100%;
+height:auto;
+padding:1.2rem 0.8rem;
+background: #F3F3F3;
+display: none;
+}
+/* 常见问题 结束------------------------------------------------*/
+.c_top{
+width:100%;
+height:6.4rem;
+padding:1.2rem 0;
+box-sizing:border-box;
+background: ;
+}
+.top_inner{
+width:96%;
+height:4rem;
+margin:0 auto;
+background:#DB3652;
+border-radius: 6px;
+}
+.top_inner h4,.numA_a h4{
+line-height: 2rem;
+}
+.numA{
+width:100%;
+height:auto;
+}
+.numA_a{
+width:100%;
+height:7rem;
+background: #fff;
+}
+.open{
+float: right;
+display:inline-block;
+float: right;
+padding-right: 10px;
+background: url('../images/xia.png') no-repeat center right;
+background-size:8px 10px;
+}
+.open2{
+background: url('../images/shang.png') no-repeat center right;
+background-size:8px 10px;
+}
+.numA_a p{
+margin-top:5px;
+}
+.m-calc-list td{
+font-size:12px;
+}
+.m-calc-list td b{
+font-weight: normal;
+}
+.m-calc-resultList{
+display: none;
+height:auto;
+}
+.numB{
+width:100%;
+height:5rem;
+margin-top:0.8rem;
+background: #fff;
+}
+.numB p{
+text-align: center;
+line-height: 3rem;
+}
+
+/* 活动规则 */
+.hear{
+width:100%;
+height:3.6rem;
+padding: 0 0.8rem;
+box-sizing:border-box;
+}
+.hear a{
+width:100%;
+height:100%;
+display: block;
+line-height: 3.6rem;
+background: url('../images/bolck-s.png') no-repeat center left;
+background-size:20px 20px;
+padding-left: 1.5rem;
+box-sizing:border-box;
+font-family: '微软雅黑';
+}
+.ba{
+width:100%;
+height:auto;
+}
+.tle{
+width:100%;
+height:2.32rem;
+margin-top:1.28rem;
+padding-top: 0.44rem;
+box-sizing:border-box;
+}
+.tle span{
+width:100%;
+height:1.44rem;
+display: block;
+}
+.tle span em{
+width:4.64rem;
+height:100%;
+display: block;
+float: left;
+background: #FEB722;
+margin: 0 0.8rem;
+color:#fff;
+text-align: center;
+line-height: 1.44rem;
+}
+.tle span ins{
+width:2.96rem;
+height:100%;
+display: block;
+float: left;
+background: url('../images/qian.png') no-repeat center center;
+background-size:cover;
+overflow: hidden;
+}
+.cont{
+margin-top:1.5rem;
+}
+.cont,.cont ul{
+width:100%;
+height:auto;
+}
+.cont li{
+width:95%;
+color:#494949;
+line-height: 1.5rem;
+display: block;
+margin:0 auto;
+}
+.cont li em{
+width:1.52rem;
+height:1.52rem;
+display: inline-block;
+background: #FFF8E8;
+text-align: center;
+line-height: 1.52rem;
+border-radius: 50%;
+color:#FEB722;
+margin-right:0.56rem;
+}
+.cont li b{
+color:#FEB722;
+font-weight: normal;
+}
+.cont li p{
+display: inline;
+}
+.footer{
+width:100%;
+height:3.76rem;
+margin:4.2rem 0 2rem 0;
+}
+.footer a{
+width:18.4rem;
+height:100%;
+display: block;
+margin:0 auto;
+background: url('../images/re.png') no-repeat center center;
+background-size:cover;
+}
+.main_in a{
+width:100%;
+height:auto;
+font-family: "微软雅黑";
+}
+.main_in a li{
+display: block;
+padding:0.8rem;
+}

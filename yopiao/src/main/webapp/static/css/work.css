@@ -1,0 +1,25 @@
+.container{
+    width: 98%;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.container .navbar{
+    margin-bottom: 0px;
+}
+
+.container .content{
+    margin: 6px 6px 0 6px;
+}
+
+.navbar .brand{
+    font-size: 16px;
+    color: green;
+}
